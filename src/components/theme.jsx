@@ -33,6 +33,7 @@ export const theme = {
     half: '50%',
     normal: '100%',
     px: '320px',
+    button: '80px',
   },
   space: [0, 2, 4, 8, 16, 32, 64, 128, 256],
 };
