@@ -4,7 +4,6 @@ import { Statistics } from './components/Statistics/Statistics';
 import { FeedbackOptions } from './components/FeedbackOptions/FeedbackOptions';
 import { Section } from './components/Section/Section';
 import { Notification } from './components/Notification/Notification';
-import PropTypes from 'prop-types';
 
 class App extends Component {
   state = {
@@ -65,18 +64,5 @@ class App extends Component {
     );
   }
 }
-
-Statistics.propTypes = {
-  good: PropTypes.number.isRequired,
-  neutral: PropTypes.number.isRequired,
-  bad: PropTypes.number.isRequired,
-  total: PropTypes.number.isRequired,
-  positivePercentage: PropTypes.string.isRequired,
-};
-
-FeedbackOptions.propTypes = {
-  options: PropTypes.object.isRequired,
-  onLeaveFeedback: PropTypes.func.isRequired,
-};
 
 export default App;
